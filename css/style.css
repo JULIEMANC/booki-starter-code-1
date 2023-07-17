@@ -16,20 +16,22 @@
 body {
     display: flex;
     justify-content: center;
+  
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 50px ;
     box-sizing: border-box;
+  
 }
 
 .logo {
     display: flex;
     justify-content:row;
     align-content:flex-start ;
-    width: 61.09px;
+    width: 20%;
     height: 19px;
     margin-top: 3px;
     margin-left: 0px;
@@ -51,10 +53,11 @@ body {
     justify-content: flex-end;
     font-size: 15px;
     font-weight: 19px;
-    margin-top: -20px ;  
+    margin-top: -19px ;  
 }
-a:focus{
 
+
+a:focus{
     border-top: 2px solid blue;
     color: #0065FC;
 }
@@ -62,47 +65,73 @@ a {
     text-decoration: none;
     color: black;
 }
-
+a:hover{
+    color: #0065FC;
+}
 h1{
     margin-top: 50px;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size:23px;
     word-spacing: normal;
     text-align: left;
 }
 .sous-titre {
-    font-size: x-small;
+    font-size: 15px;
     word-spacing: normal;
-    line-height: 0.5px;
+    line-height: 0.1px;
+    
 }
 
-form{
-    margin-top: 30px;
-    border-radius: 55px;
-    box-sizing: border-box;
-    border-top: thin solid;
-    border-color: #DEEBFF #DEEBFF #DEEBFF #DEEBFF ;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px;
-    line-height: 34px;
-    width: 330px; 
-    height: 38px;
-    gap: 50px;
-    background-position-y : top; 
-    padding: 2px 2px 2px 2px;
+.search-bar {
+   display: flex;
+   align-items: center;
+   justify-content:flex-start;
+   flex-direction: row;
+   border-radius: 15px;
+   margin-top: 30px;
+
+}
+
+.texte-search-bar{
+    border: white;
+    font-weight: bold;
+    font-size: medium;
+    font-style: black;
+    width: 16%;
+    height: 50px;
+    border-top:solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    border-right: solid #F2F2F2 1px;
+    padding-left: 15px;
 }
 
 .bouton{
-    background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100px;
-    height: 35px;
-    font-weight: bold;
+    background-color: blue;
+    color: white;
+    width: 8%;
+    height: 50px;
+    border-radius: 0px 15px 15px 0px;
+    font-size:medium;
+   font-weight:  bold;
+    border: none;
+    margin-left: -45px;
+
+}
+
+.search-bar #location-dot{
+    width: 5%;
+    height: 50px;
+    border-radius: 15px 0px 0px 15px ;
+    background-color: #F2F2F2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #loupe-icone {
     display:none;
-    width: 50px;
+    width: 10%;
     height: 49px;
     border: 1px solid blue;
     border-radius: 0px 15px 15px 0px ;
@@ -113,55 +142,59 @@ form{
     align-content: center;
 }
 
-@media screen and (max-widht:768px){
-    #loupe-icone{display: none;}
-}
+
 
 .filtres {
-    margin-top: 30px;
-    margin-left: 0px;
+    margin-top: 50px;
     font-weight: bold;
-    font-size : 18px;
+    font-size : 18px; 
+    display: flex;
 
- 
 }
 
 .filtre {
     border-radius: 25px;
-    border-color: #F2F2F2;
-    padding:12px;
-    width: 15%; 
-    height: 50px ;
-    font-size: bold;
+    padding:15px;
+    border: solid 1px #d9d9d9;
     background-color: white;
-    margin-left: 49px;
-    font-size:  1rem;
+    margin-left: 10px;
+    font-size:  18px;
     font-weight: bold;
     letter-spacing: normal;
     display: flex;
-    justify-content: space-around;
+   
 }
 
 .namefiltre{
     display:flex; 
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items:flex-start;
+    align-items: center;
+    width: 120%; 
+    height: 75px ;
+    margin-left: 20px;
+    margin-top: -5px;
+   
+    
 }
-
 
 .filtre:hover  {
     background-color:#DEEBFF ;
 }
 
-.fa-solid-fa-circle-info {
-    background-color: grey;
+.info-bar i {
+    border : solid #d9d9d9 1px;
+    border-radius: 50%;
+    width: 2%;
+    height: 22px;
+    text-align: center;
+ 
 }
+
 .info-bar{
 margin-top: 25px;
 margin-bottom: 25px;
 margin-left: 13px;
-font-size :0.7em;  
+font-size :15px;  
 word-spacing: normal;
 }
 
@@ -212,7 +245,7 @@ word-spacing: normal;
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
     height: 680px;
 }
@@ -222,50 +255,49 @@ word-spacing: normal;
     background-color: white;
     box-shadow: 0 2px 1px 0 rgba(0,0,0,0.1);
     border-radius: 20px; 
-    border-style :solid ; 
-    border-color: #DEEBFF;
-    width: 28%;
-    height: 175px;
+    width: 30%;
+    height: 218px;
     padding: 5px;
-    margin-top: 5px;  
+    margin-top:32px; 
 }
 
 .hebergement {   
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-top: 10px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-content: space-around;
+   margin-top: 1px;
 }
 
 .hebergement img{
     border-radius: 10px 10px 0px 0px;
     width: 100%;
-    height: 80px;
+    height: 115px;
     object-fit:cover;
 }
 
 .hebergement .card-title{
-    margin-bottom: 0;
     margin-top: 5px;
     margin-left:5px ;
 }
 .hebergement .card-subtitle{
-    margin-top: 8px; 
     margin-left:5px ;
 }
 .hebergement .card-rating{
     margin-top: -10px;
-    margin-left:5px ;   
+    margin-left:7px ;   
 }
 .hebergement .neutral-star{
     color: #DEEBFF;
 }
 
-.hebergement .more{
+#hebergements .more {
     font-weight: bold;
-    margin-top: 410px;
-    margin-top: 18%;
+   display:flex ;
+   padding-top: 3%;
+   
+
 }
 /****** Populaires ***********/
 .populaires {
@@ -314,81 +346,74 @@ margin-top: 10px;
 
 
 /*card activites*/
-.activites-marseille{
-    position: absolute;
-    margin-top: 750px;
+#activites-marseille {
+    margin-top: 75px;
     margin-left: 10px;
     width: 70%;
-    min-height: 1500px;
+}
+#activites-marseille .section-title{
+    font-size: 22px;
     
 }
-.activites-card .card {
-    position: absolute;
-    margin-top: 820px;
-    margin-left:-1330px;
-    background-color:white;
-    width: 13%;
-    height: 380px;   
-    border-radius: 20px;
-    padding: 0%;
+.activity .card-content{
+    width: 200%;
+    height: 70px;
+    padding: 0px; 
+   
 }
-
-.activites-card img{
+.activity img{
     width: 100%;
-    height: 330px;
-    object-fit:cover;
-    border-radius: 20px 20px 0px 0px;
+    height:380px ;
+    border-radius: 20px 20px 0px 0px ;
+    object-fit: cover;
+}   
+.activity {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
 }
 
-.activites-card .card-title{
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
-.activites-card .card-content {
-display: flex;
-flex-direction:row;
-justify-content: space-between;
-align-content: space-between;
+.activity .card-title{
+ margin-top: 10px;
+ margin-left: 10px;
 }
 
 /* footer*/
 .content-box {
     display: flex;
     flex-direction: column;
-    margin-top: 600px;
+    margin-top: 60px;
     margin-left: 10px;
     gap:30px;
     background-color:#F2F2F2;
     box-sizing: content-box;
-    min-width: 100%;
-    max-height: 200px;
+    width: 100%;
+    height: 250px;
 }
-
+.footer-bas p{
+    font-weight: bold;
+    font-size: larger;
+}
 
 .texte-bas  {
     list-style-type: none;
+    margin-left: -10px;
     margin-top: 20px;
-    line-height: 2rem;
+    line-height: 210%;
 }
 
 .texte-bas1{
     list-style-type: none;
-    margin-top: 20px;
-    line-height: 2rem;
-    margin-left: 30%;
-    margin-top: -170px;
+    line-height: 210%;
+    margin-left:350px;
+    margin-top: -215px;
 }
 .texte-bas2{
     list-style-type: none;
-    margin-top: 20px;
-    line-height: 2rem;
-    margin-left: 60%;
-    margin-top: -200px;
-}
-
-.footer {
-    bottom: 0px;
+    line-height:210%;
+    margin-left: 700px;
+    margin-top: -245px;
 }
 
 
@@ -399,11 +424,24 @@ align-content: space-between;
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .search-bar{
+        margin-top: 60px;
+        width: 150%;
+        height: 20px;
+        border-radius: 15px;
+    }
+    .namefiltre {
+        width: 120%;
+        margin-top: 50px;
+        margin-left: -65px;
+    }
+   
+   
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergements {
         width: 100%;
     }
 
@@ -429,9 +467,208 @@ align-content: space-between;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activity {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-content:space-around ;  
+    }
+
+    .texte-bas1 {
+        margin-left: 300px;
+    }
+    .texte-bas2 {
+        margin-left: 600px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
-}
+
+    .main-container{
+        padding: 2%; 
+    }
+
+    .logo {
+      padding: 10px;
+      margin-bottom: 50px;
+      height: 20px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+     }
+
+   .ongletA {
+    display: flex;
+    flex-direction: row;
+    font-size:15px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-right: 25px;
+    border-bottom : 2px solid grey
+    }
+    
+    .ongletH{
+        display: flex;
+        flex-direction: row;
+        font-size:15px;
+        padding:10px;
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+
+    header a:hover{
+      text-decoration: underline 2px;
+    }
+
+    header a:focus {
+        border-top: none;
+        border-bottom: 30px 2px solid blue ; 
+        gap: 15px;
+    }
+
+    #loupe-icone  { display: flex; 
+        width: 5%;
+        border-radius: 15px;
+      
+    }
+
+   .bouton {
+    display:none;
+      
+    }
+   
+    .encars H1 { 
+        font-size: 20px;
+        margin-top: 28px;
+    }
+
+    .encars .sous-titre {
+        font-size: 13px;   
+    }
+
+    .search-bar{
+        margin-top: 50px;
+        width: 330%;
+        height: 20px;
+        border-radius: 15px;
+    
+    }
+
+     .filtres{
+        display: flex;
+        margin-top: 20px;
+      
+     }
+     .namefiltre {
+        width: 90%;
+        height: 120px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -75px;
+       
+    }
+    .filtre{
+        font-size:small;
+     }
+     
+     .info-bar{
+        margin-top: 50px;
+        display:flex ;
+        justify-content: flex-start;
+        font-size: 15px;
+     }
+     /** Section Hebergement - populaires**/
+
+      .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .populaires {
+        width: 100% ;
+        margin-top:10px;
+        border-radius :0%;
+     }
+      .populaires-cards{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+      }
+     .populaires .card{
+        height: 100px;
+        width: 100%;
+     }
+     
+      #hebergements {
+        width: 100%;
+        height: 1000px;
+        background-color: white;  
+     }
+     #hebergements .section-title{
+        font-size:19px;
+        margin-left: -20px;
+     }
+
+     #hebergements .hebergement{
+        margin-top: -45px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
+     .hebergement .card{
+        width: 100%;
+     }
+      
+     .more{ 
+        font-size: 16px;
+       margin-top: 20px;
+       margin-left: -20px;
+    }
+
+     /** Section activités **/
+    #activites-marseille .section-title {
+        margin-top: 700px;
+        font-size: 20px;
+      }
+
+     .activity {
+        margin-top: 30px;
+        width: 120%;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+     }
+    
+    .activity .card-title{
+        font-size: 18px;
+     }
+     
+
+    /**section footer **/
+
+     .content-box{
+     width: 95%;
+     height: 530px;
+     margin-top: 60px;
+    }
+   
+     .texte-bas1 {
+      margin-top: -30px;
+      margin-left: 0px;
+    
+    }
+    .texte-bas2{
+       margin-top: -30px;
+       margin-left: 0px;
+    }
+
+    }
