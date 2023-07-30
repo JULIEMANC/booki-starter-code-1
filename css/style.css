@@ -150,11 +150,11 @@ h1 {
     width: 10%;
     height: 49px;
     border: 1px solid;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 0px 15px ;
     background-color: blue;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .filtres {
@@ -429,7 +429,12 @@ footer {
         width: 100%;
         border-radius: 15px;
     }
-
+    .texte-search-bar{
+     width: 20%;
+    }
+    .bouton{
+        width:15%;
+    }
     .filtres {
         margin-top: 10px;
         display: flex;
@@ -546,14 +551,17 @@ footer {
 
     .search-bar {
         margin-top: 50px;
-        width: 80%;
+        width: 90%;
         border-radius: 15px;
     }
 
     form .texte-search-bar {
-        width: 60%;
+        width: 80%;
     }
 
+    #loupe-icone{
+        width: 10%;
+    }
     .searchicon {
         color: white;
         justify-content: center;
