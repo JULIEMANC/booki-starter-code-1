@@ -104,7 +104,6 @@ h1 {
     flex-wrap: nowrap;
     border-radius: 15px;
     margin-top: 30px;
-
 }
 
 .texte-search-bar {
@@ -133,8 +132,6 @@ h1 {
     font-size: medium;
     font-weight: bold;
     border: none;
-
-
 }
 
 .search-bar #location-dot {
@@ -160,14 +157,11 @@ h1 {
     align-content: center;
 }
 
-
-
 .filtres {
     margin-top: 50px;
     font-weight: bold;
     font-size: 18px;
     display: flex;
-
 }
 
 .filtre {
@@ -179,13 +173,13 @@ h1 {
     font-weight: bold;
     letter-spacing: normal;
     display: flex;
-
 }
 
 .namefiltre {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 15px;
     width: 100%;
     height: 75px;
     margin-left: 20px;
@@ -262,7 +256,6 @@ h1 {
     height: 680px;
 }
 
-
 .hebergement .card {
     background-color: white;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1);
@@ -311,8 +304,6 @@ h1 {
     font-weight: bold;
     display: flex;
     padding-top: 3%;
-
-
 }
 
 /****** Populaires ***********/
@@ -381,7 +372,6 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 
@@ -407,8 +397,6 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-color: #f2f2f2;
-
-
 }
 
 .footer-block {
@@ -426,10 +414,6 @@ footer {
     font-weight: bold;
     font-size: 18px;
 }
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -550,7 +534,7 @@ footer {
         border-top: none;
         color: #0065fc;
     }
-   
+
 
     #loupe-icone {
         margin-left: -15px;
@@ -558,8 +542,8 @@ footer {
         width: 18%;
         border-radius: 15px;
         color: #d9d9d9;
-
     }
+
     .search-bar {
         margin-top: 50px;
         width: 80%;
@@ -567,7 +551,7 @@ footer {
     }
 
     form .texte-search-bar {
-        width:60%;
+        width: 60%;
     }
 
     .searchicon {
@@ -592,7 +576,7 @@ footer {
         font-size: 13px;
     }
 
-    
+
     .filtres {
         display: flex;
         margin-top: 40px;
@@ -606,7 +590,6 @@ footer {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-
     }
 
     .filtre {
@@ -642,8 +625,6 @@ footer {
         margin-top: 10px;
         border-radius: 0px;
         padding: 0;
-
-
     }
 
     .populaires-cards {
@@ -664,7 +645,6 @@ footer {
 
     #hebergements .section-title {
         font-size: 19px;
-
     }
 
     #hebergements .hebergement {
@@ -680,7 +660,6 @@ footer {
     .more {
         font-size: 16px;
         margin-top: 20px;
-
     }
 
     /** Section activités **/
@@ -709,7 +688,7 @@ footer {
 
     .card-activity img {
         height: 124px;
-        min-height: min-content !important;
+        min-height: min-content;
     }
 
     .activity .card-title {
